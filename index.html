@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScreenFix</title>
     <link rel="stylesheet" href="styles.css">
-<style> 
+<style>
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -83,6 +84,36 @@ footer {
 footer a {
     color: #FFA500;
     text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .producto {
+        width: 45%; /* Los productos serán más pequeños en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block; /* Navegación vertical en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    .producto {
+        width: 90%; /* Los productos ocuparán casi todo el ancho en pantallas pequeñas */
+    }
+
+    section {
+        padding: 20px; /* Menos padding en pantallas pequeñas */
+    }
+
+    section h2 {
+        font-size: 1.8em; /* Títulos más pequeños en pantallas pequeñas */
+    }
 }
 </style>
 </head>
