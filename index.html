@@ -74,58 +74,6 @@ section h2 {
     border-radius: 10px;
 }
 
-/* Estilos para la sección Home */
-.home-section {
-    height: 100vh;
-    background-image: url('images/logo.png'); /* Cambia esto por la URL de tu logo */
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    text-align: center;
-}
-
-.home-section .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px;
-    border-radius: 10px;
-}
-
-.home-section .logo {
-    width: 200px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.home-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.home-section .description {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.home-section .cta-button {
-    background-color: #FF4500;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.home-section .cta-button:hover {
-    background-color: #FFA500;
-    transition: 0.3s ease;
-}
-
-/* Estilos del footer */
 footer {
     background-color: #333;
     color: white;
@@ -166,15 +114,6 @@ footer a {
     section h2 {
         font-size: 1.8em; /* Títulos más pequeños en pantallas pequeñas */
     }
-
-    .home-section h2 {
-        font-size: 1.8em;
-    }
-
-    .home-section .cta-button {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
 }
 </style>
 </head>
@@ -190,24 +129,23 @@ footer a {
         </nav>
     </header>
 
-    <!-- Sección Home -->
     <section id="home" class="home-section">
-        <div class="overlay">
-            <img src="images/LOGO.jpg" alt="Logo de ScreenFix" class="logo">
-            <h2 class="tagline">Los mejores productos para tu celular</h2>
-            <p class="description">Protege y personaliza tu dispositivo con accesorios de alta calidad.</p>
-            <a href="#productos" class="cta-button">Ver Productos</a>
-        </div>
-    </section>
+    <div class="overlay">
+        <img src="images/logo.png" alt="Logo de ScreenFix" class="logo">
+        <h2 class="tagline">Los mejores productos para tu celular</h2>
+        <p class="description">Protege y personaliza tu dispositivo con accesorios de alta calidad.</p>
+        <a href="#productos" class="cta-button">Ver Productos</a>
+    </div>
+</section>
 
-    <!-- Sección de Productos -->
+
     <section id="productos">
         <h2>Productos Destacados</h2>
         <div class="producto">
             <h3>Fundas de silicona </h3>
             <p>Elegi la protección de tu celular del color que más te guste.</p>
             <p>Precio: $6.000</p>
-            <img src="img/fundassilicona.jpeg" alt="Funda de silicona">
+             <img src="img/fundassilicona.jpeg" alt="Funda de silicona">
         </div>
         <div class="producto">
             <h3>Funda transparente reforzada</h3>
@@ -215,14 +153,155 @@ footer a {
             <p>Precio: $4.000</p>
             <img src="img/fundastransparentes.jpeg" alt="Funda transparente">
         </div>
-        <!-- Otros productos aquí -->
+        <div class="producto">
+            <h3>Funda magnética metalizada</h3>
+            <p>Protege tu celular con el último estilo metálico.</p>
+            <p>Precio: $8.000</p>
+            <img src="img/fundasmagneticas.jpg" alt="Funda magnética">
+        </div>
+         <div class="producto">
+            <h3>Protección de pantalla Hidrogel</h3>
+            <p>Protege tu celular con la nueva tecnología de hidrogel anti-estallido.</p>
+            <p>Precio: $6.000</p>
+             <img src="img/hidrogel.jpg" alt="Protección hidrogel">
+        </div>
+        <div class="producto">
+            <h3>Protección de pantalla templada</h3>
+            <p>Protege tu celular con vidrios templados reforzados 9D.</p>
+            <p>Precio: $3.000</p>
+            <img src="img/templado.avif" alt="Protección templada">
+        </div>
+        <div class="producto">
+            <h3>Protección de cámara para Iphone</h3>
+            <p>Protege tu cámara de la mano de brillos y colores que combinen con tu celular.</p>
+            <p>Precio: $3.500</p>
+             <img src="img/proteccioncamaras.jpeg" alt="Protección de cámaras">
+        </div>
+        <div class="producto">
+            <h3>Parlante Bluetooth JBL GO3 original</h3>
+            <p>Disfruta de tu música con calidad de sonido excepcional.</p>
+            <p>Precio: $60.000</p>
+            <img src="img/JBLGO3.jpeg" alt="Parlante JBL GO3">
+        </div>
+        <div class="producto">
+            <h3>Parlante Bluetooth JBL GO4 original</h3>
+            <p>Disfruta de tu música con calidad de sonido excepcional.</p>
+            <p>Precio: $90.000</p>
+            <img src="img/JBLGO4.jpeg" alt="Parlante JBL GO4">
+        </div>
+        <div class="producto">
+            <h3>Parlante Bluetooth JBL Flip 6 original</h3>
+            <p>Disfruta de tu música con calidad de sonido excepcional.</p>
+            <p>Precio: $200.000</p>
+            <img src="img/JBLFLIP6.jpeg" alt="Parlante FLIP6">
+        </div>
+        <div class="producto">
+            <h3>Auriculares inalámbricos Xiaomi Redmi Buds 4 Lite</h3>
+            <p>La mejor calidad de sonido para tu música.</p>
+            <p>Precio: $40.000</p>
+            <img src="img/aurisxiaomiredmibuds4lite.jpg" alt="Auriculares Xiaomi 4">
+        </div>
+        <div class="producto">
+            <h3>Auriculares inálambricos Xiaomi Airdots 3</h3>
+            <p>La mejor calidad de sonido para tu música.</p>
+            <p>Precio: $15.000</p>
+            <img src="img/aurisxiaomi3.jpeg" alt="Auriculares Xiaomi 3">
+        </div>
+         <div class="producto">
+            <h3>Auriculares inálambricos JBL TUNE 520bt</h3>
+            <p>La mejor calidad de sonido para tu música.</p>
+            <p>Precio: $80.000</p>
+            <img src="img/aurisJBLtune.jpeg" alt="Auriculares JBL">
+        </div>
+         <div class="producto">
+            <h3>Auriculares con cable SAMSUNG</h3>
+            <p>La mejor calidad de sonido para tu música.</p>
+            <p>Precio: $3.000</p>
+            <img src="img/aurissamsumgbolsita.jpg" alt="Auriculares SAMSUNG">
+        </div>
+        <div class="producto">
+            <h3>Cámaras de seguridad GADNIC para exterior x4</h3>
+            <p>Protege tu casa con la última tecnología desde una app en tu celular.</p>
+            <p>Precio: $250.000</p>
+             <img src="img/camarasexterior.jpg" alt="Camaras gadnic exterior">
+        </div>
+        <div class="producto">
+            <h3>Cámaras de interior</h3>
+            <p>El interior de tu casa monitoriado las 24hs con WiFi.</p>
+            <p>Precio: $45.000 c/u</p>
+             <img src="img/camarainterior.jpg" alt="Camara Gadnic interior">
+        </div>
+        <div class="producto">
+            <h3>Cable APPLE usb-c</h3>
+            <p>Precio: $5.000</p>
+             <img src="img/cableiphoneusb-c.jpeg" alt="Cable iphone usb-c">
+        </div>
+        <div class="producto">
+            <h3>Cable SAMSUNG usb-c</h3>
+            <p>Precio: $5.000</p>
+             <img src="img/cablesamsung.jpg" alt="Cable samsung usb-c">
+            </div>
+        <div class="producto">
+            <h3>Cable MOTOROLA usb-c</h3>
+            <p>Precio: $5.000</p>
+             <img src="img/cablemotorola.jpeg" alt="Cable motorola usb-c">
+             </div>
+        <div class="producto">
+            <h3>Cable NOVERA micro usb</h3>
+            <p>Precio: $4.000</p>
+             <img src="img/cablemicrousb.jpg" alt="Cable novera micro usb">
+              </div>
+        <div class="producto">
+            <h3>Cable NOVERA lightning</h3>
+            <p>Precio: $4.000</p>
+             <img src="img/cablelightning.jpg" alt="Cable novera lightning">
+            </div>
+        <div class="producto">
+            <h3>Cargador con cable NOVERA usb-c 1M</h3>
+            <p>Precio: $10.000</p>
+             <img src="img/cargadornoverausb-c.jpg" alt="Cargador novera usb-c">
+            </div>
+        <div class="producto">
+            <h3>Extensor de WiFi Xiaomi</h3>
+            <p>Que ninguna parte de tu casa se quede sin WiFi.</p>
+            <p>Precio: $40.000</p>
+             <img src="img/wifiextenderredmi.png" alt="Extensor WiFi xiaomi">
+            </div>
+        <div class="producto">
+            <h3>Luz de noche ajustable Xiaomi</h3>
+            <p>Adapta tu luz para que sea tenue y no lastime la vista.</p>
+            <p>Precio: $40.000</p>
+             <img src="img/nightlightredmi.png" alt="Luz de noche xiaomi">
+            </div>
+        <div class="producto">
+            <h3>Enchufe inteligente Xiaomi</h3>
+            <p>Activa tu enchufe inteligente desde tu celular. También con Alexa o Google Assistant.</p>
+            <p>Precio: $35.000</p>
+             <img src="img/smartplug.jpg" alt="Enchufe inteligente xiaomi">
+            </div>
+        <div class="producto">
+            <h3>Proyector Wambo</h3>
+            <p>Obtené una experiencia cinematográfica con una claridad y resolución única en tus proyecciones.</p>
+            <p>Precio: $500.000</p>
+             <img src="img/proyectorwambo.jpg" alt="Proyector wambo">
+            </div>
+        <div class="producto">
+            <h3>Luces LED full color</h3>
+            <p>Decorá tu espacio con luces LED y controlalas desde la comodidad de tu sillón.</p>
+            <p>Precio: $10.000</p>
+             <img src="img/ledlights.jpg" alt="Luces LED">
+            </div>
+        <div class="producto">
+            <h3>Conversor HD a audio/video RCA</h3>
+            <p>Diseñado para convertir una señal analógica de HD digital a RCA.</p>
+            <p>Precio: $10.000</p>
+             <img src="img/conversorhd.png" alt="Conversor HD">
     </section>
 
-    <!-- Sección de Contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Si tenes alguna consulta, no dudes en <a href="https://www.instagram.com/screenfix_/">hablarnos por Instagram</a>.
-        También podes venir a nuestro local en <a href="https://www.google.com.ar/maps/place/LA+GRAN+DULCE/@-34.7059318,-58.4658579,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccf638b3f6bd1:0x80850a3e41a7a75a!8m2!3d-34.7059362!4d-58.463283!16s%2Fg%2F11pq98x807?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D">"La Gran Dulce" - AV. General Paz y 27 de febrero, local 153 A1</a></p>
+        También podes venir a nuestro local en<a href="https://www.google.com.ar/maps/place/LA+GRAN+DULCE/@-34.7059318,-58.4658579,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccf638b3f6bd1:0x80850a3e41a7a75a!8m2!3d-34.7059362!4d-58.463283!16s%2Fg%2F11pq98x807?entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D">"La Gran Dulce" - AV. General Paz y 27 de febrero, local 153 A1</a> </p>
     </section>
 
     <footer>
