@@ -5,159 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScreenFix</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilos generales */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-        header {
-            background: linear-gradient(90deg, #FFA500, #FF4500); /* Naranja degradado */
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
+header {
+    background: linear-gradient(90deg, #FFA500, #FF4500); /* Naranja degradado */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
 
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 10px;
-            text-align: center;
-        }
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 1.2em;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
 
-        section {
-            padding: 50px;
-            text-align: center;
-        }
+section {
+    padding: 50px;
+    text-align: center;
+}
 
-        section h2 {
-            margin-bottom: 30px;
-            font-size: 2.5em;
-        }
+section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
 
-        .home-section {
-            position: relative;
-            background-image: url('img/LOGO.jpg'); /* Cambia la ruta si es necesario */
-            background-size: cover;
-            background-position: center;
-            height: 100vh; /* Altura completa */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
+.producto {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .overlay {
-            background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
 
-        .tagline {
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-        .description {
-            font-size: 1.2em;
-        }
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+}
 
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #FFA500;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
 
-        .producto {
-            display: inline-block;
-            width: 30%;
-            margin: 1%;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        }
+    .producto {
+        width: 45%; /* Los productos serán más pequeños en pantallas medianas */
+    }
+}
 
-        .producto img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
+@media (max-width: 480px) {
+    nav ul li {
+        display: block; /* Navegación vertical en pantallas pequeñas */
+        margin: 10px 0;
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    .producto {
+        width: 90%; /* Los productos ocuparán casi todo el ancho en pantallas pequeñas */
+    }
 
-        footer a {
-            color: #FFA500;
-            text-decoration: none;
-        }
+    section {
+        padding: 20px; /* Menos padding en pantallas pequeñas */
+    }
 
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            .producto {
-                width: 45%; /* Los productos serán más pequeños en pantallas medianas */
-            }
-
-            .home-section {
-                height: auto; /* Ajuste para pantallas más pequeñas */
-            }
-        }
-
-        @media (max-width: 480px) {
-            nav ul li {
-                display: block; /* Navegación vertical en pantallas pequeñas */
-                margin: 10px 0;
-            }
-
-            .producto {
-                width: 90%; /* Los productos ocuparán casi todo el ancho en pantallas pequeñas */
-            }
-
-            section {
-                padding: 20px; /* Menos padding en pantallas pequeñas */
-            }
-
-            section h2 {
-                font-size: 1.8em; /* Títulos más pequeños en pantallas pequeñas */
-            }
-        }
-    </style>
+    section h2 {
+        font-size: 1.8em; /* Títulos más pequeños en pantallas pequeñas */
+    }
+}
+</style>
 </head>
 <body>
     <header>
@@ -172,12 +130,14 @@
     </header>
 
     <section id="home" class="home-section">
-        <div class="overlay">
-            <h2 class="tagline">Los mejores productos para tu celular</h2>
-            <p class="description">Protege y personaliza tu dispositivo con accesorios de alta calidad.</p>
-            <a href="#productos" class="cta-button">Ver Productos</a>
-        </div>
-    </section>
+    <div class="overlay">
+        <img src="img/LOGO.jpg" alt="Logo de ScreenFix" class="logo">
+        <h2 class="tagline">Los mejores productos para tu celular</h2>
+        <p class="description">Protege y personaliza tu dispositivo con accesorios de alta calidad.</p>
+        <a href="#productos" class="cta-button">Ver Productos</a>
+    </div>
+</section>
+
 
     <section id="productos">
         <h2>Productos Destacados</h2>
